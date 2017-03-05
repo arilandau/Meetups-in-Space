@@ -1,0 +1,21 @@
+<% if @error %>
+<h1>Error: <%= @error %></h1>
+<% end %>
+
+<h1> Create a New Meetup </h1>
+
+<form action="/meetups/show/new" method="post">
+  <h3><label for="name">Name of Your Meetup:</label>
+  <input type="text" name="name" value="<%= @name %>"></h3>
+
+  <h3><label for="description">Description:</label>
+  <input type="text" name="description" value="<%= @description %>"</h3>
+
+  <h3><label for="location">Location:</label>
+  <input type="text"name="location" value="<%= @name %>"></h3>
+
+  <input type="hidden" name="creator" value=""></h3>
+
+
+  <button><input type="submit"></button>
+</form>
